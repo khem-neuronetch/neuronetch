@@ -5,70 +5,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Neuron Etch</title>
   <style>
-    body {
-      background-color: black;
-      color: white;
-      font-family: monospace;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      margin: 0;
-      padding: 2rem;
-    }
+      body {
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+  }
 
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  hr {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    border: 1px solid white;
+  }
+
+  .posts {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .posts a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+
+  .posts a:hover {
+    text-decoration: underline;
+  }
+
+  .post-content {
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    padding: 0 1rem;
+  }
+
+  .post-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .post-content p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Optional: tweak for smaller screens */
+  @media (max-width: 400px) {
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
+      font-size: 1.5rem;
     }
 
     nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-size: 1.2rem;
+      font-size: 0.9rem;
+      margin: 0 0.3rem;
     }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    hr {
-      width: 60%;
-      margin: 2rem auto;
-      border: 1px solid white;
-    }
-
-    .posts {
-      margin-top: 2rem;
-    }
-
-    .posts a {
-      display: block;
-      color: white;
-      text-decoration: none;
-      margin: 0.5rem 0;
-      font-size: 1.1rem;
-    }
-
-    .posts a:hover {
-      text-decoration: underline;
-    }
-
-    .post-content {
-      width: 60%;
-      text-align: left;
-    }
-
-    .post-content h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-    }
-
-    .post-content p {
-      font-size: 1rem;
-      margin-bottom: 1rem;
-    }
+  }
   </style>
 </head>
 <body>
